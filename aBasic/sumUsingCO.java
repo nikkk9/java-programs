@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-// sum of given number using class and object 
 class sum {
     int addition(int a, int b) {
         return a + b;
     }
 }
 
-public class p4 {
+public class sumUsingCO {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

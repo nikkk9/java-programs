@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-// table of given number 
-public class p3 {
+public class printTable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter a number ");

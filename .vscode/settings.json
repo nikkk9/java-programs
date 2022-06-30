@@ -1,3 +1,16 @@
 {
-  "java.project.sourcePaths": ["aBasic", "bPattern", "."]
+  "java.project.sourcePaths": [
+    ".",
+    "aBasic",
+    "bPattern",
+    "cConversion",
+    "dFunction",
+    "eArray",
+    "f2dArray",
+    "gString",
+    "hBit",
+    "iSorting",
+    "practice",
+    "jRecursion"
+  ]
 }

@@ -1,5 +1,11 @@
 public class Basic {
     Node head;
+    // this is for get size value
+    private int size;
+
+    Basic() {
+        this.size = 0;
+    }
 
     class Node {
         String data;
@@ -9,6 +15,9 @@ public class Basic {
         Node(String data) {
             this.data = data;
             this.next = null;
+
+            size++;
+
         }
     }
 
@@ -56,20 +65,23 @@ public class Basic {
     }
 
     // delete first
-    public void deleteFirst() {
+    public void removeFirst() {
         if (head == null) {
             System.out.println("list is an empty");
             return;
         }
+        size--;
+
         head = head.next;
     }
 
     // delete last
-    public void deleteLast() {
+    public void removeLast() {
         if (head == null) {
             System.out.println("list is an empty");
             return;
         }
+        size--;
         if (head.next == null) {
             head = null;
             return;
@@ -86,6 +98,10 @@ public class Basic {
 
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public static void main(String[] args) {
         Basic list = new Basic();
         list.addFirst("is");
@@ -98,11 +114,13 @@ public class Basic {
         list.addFirst("okay");
         list.printList();
 
-        list.deleteFirst();
+        list.removeFirst();
         list.printList();
 
-        list.deleteLast();
+        list.removeLast();
         list.printList();
+
+        System.out.println(list.getSize());
 
     }
 
